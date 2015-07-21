@@ -12,22 +12,69 @@
   <body>
     <header>
         <h1><a href="#">mi nombre</a></h1>
+        <!--
+        <nav id='menu-superior'>
+            <ul>
+                <li>inicio</li>
+                <li>portafolio</li>
+                <li>quien soy</li>
+                <li>contacto</li>
+            </ul>
+        </nav>-->
     </header>
-    <div class="">
-
-
-    <section class="portafolio">
-
-    </section>
-    <section class="descripcion">
-
-    </section>
-    <section class="contacto">
-
-    </section>
-    <footer>
-        
-    </footer>
+    <div class="contenedor">
+        <section class="seccion portafolio-job">
+            <article class="job">
+                <figure>
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300" alt="descripcion de trabajo" />
+                </figure>
+                <ul class="job-description">
+                    <li class="job-title">
+                        <a href="/">Trabajo 1</a>
+                    </li>
+                    <li class="job-favorite">
+                        <a href="/" class="favorite">
+                            <span class="icon-heart">
+                                <p>5</p>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="seccion descripcion">
+            <h2>quien soy</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+        </section>
+        <section>
+            <aside id="menu-social">
+                <ul>
+                    <li class="r-twitter red-social"><a href="/"><span class="icon-twitter"></span></a></li>
+                    <li class="r-facebook red-social"><a href="/"><span class="icon-fb"></span></a></li>
+                    <li class="r-gplus red-social"><a href="/"><span class="icon-g-plus"></span></a></li>
+                </ul>
+            </aside>
+        </section>
+        <section class="seccion contacto">
+    			<h2>contacto</h2>
+    			<form class="formulario">
+    				<input type="text" name="email" />
+    				<input type="text" name="subject" />
+    				<textarea name="message" ></textarea>
+    				<button type="submit" >Enviar</button>
+    			</form>
+    		</section>
+            <footer class="seccion">
+                <p>Mi Nombre - 2015</p>
+            </footer>
     </div>
   </body>
 </html>
