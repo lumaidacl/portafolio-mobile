@@ -43,50 +43,150 @@
 /*page definition*/
 body{
 	font-family: 'Roboto', tahoma;
-	font-size: 14px;
+	font-size: 16px;
 	background-color: #F0F0F0;
 }
 header{
 	background-color: white;
 }
+
+header:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
 header h1{
 	text-transform: uppercase;
 	font-weight: 400;
 	margin: 0;
 	padding: 0.3em;
+	float: left;
 }
 header h1 a{
 	text-decoration: none;
 	color: black;
 }
+
+header > #menu-superior{
+	float: right;
+}
+/*
+header #menu-superior a{
+
+}*/
+
+header > #menu-superior ul{
+	margin: 0 auto;
+	padding: 0;
+}
+
+header #menu-superior ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/*padding: 0.5em;*/
+}
+
+header #menu-superior ul li a{
+	text-decoration: none;
+	display: block;
+	color: black;
+	padding: 1em;
+
+}
+header #menu-superior ul li a:hover{
+	background-color: #2EC0C1;
+	color: white;
+}
+
 /*enviroment page*/
 .contenedor{
 	margin: 0 auto;
 }
+
 h2{
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
+	font-weight: 400;
 }
+
 .seccion{
 	margin: 0;
 	padding: 1em;
 }
+
+.portafolio-job .job-container{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
 .portafolio-job .job figure{
 	margin: 0;
 	font-size: 0;
 }
+
 .portafolio-job .job figure img{
 	width: 100%;
 }
-.portafolio-job .job .job-descripcion ul{
 
+.portafolio-job .job .job-description{
+	margin:0;
+	padding: 0;
+	font-size: 0;
 }
-.job .job-descripcion ul li{
+
+.portafolio .job .job-description li{
+	font-size: 1em;
 	display: inline-block;
 }
-.job .job-descripcion ul li a{
+
+.portafolio .job .job-description li a{
+	margin: 0;
+	padding: 1em 0.4em;
 	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+	color:#FFFFFF;
+	display: block;
 }
+
+.favorite{
+	padding: 0;
+}
+
+.portafolio .job .job-description ul{
+	list-style: none;
+}
+
+.portafolio .job .job-description .job-favorite .favorite a{
+	margin: 0 1em;
+}
+
+.portafolio .job .job-description .job-favorite .favorite p{
+	margin: 0;
+}
+
+.portafolio .job .job-description .job-title a{
+	background-color: blue;
+	width: 80%;
+	font-weight: normal;
+}
+
+.portafolio .job .job-description .job-title a{
+	margin: 0;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.portafolio .job .job-description .job-favorite{
+	background-color: #F87067;
+	width: 20%;
+}
+
 /*descripcion del contenido*/
 .descripcion{
 	background-color: #2EC0C1;
@@ -127,6 +227,7 @@ h2{
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
+
 }
 #menu-social ul li{
 	text-align: center;
@@ -164,9 +265,46 @@ h2{
 /*firma*/
 footer{
 	background-color: #323232;
+	clear: both;
 }
 footer p{
 	color: white;
 	text-align: center;
 	margin: 0;
+}
+/* media query */
+@media only screen and (min-width: 580px){
+	/*resetear los estilos*/
+	.portafolio .job-container{
+		font-size: 0;
+	}
+	/* desplegar vista*/
+	.portafolio .job-container > li{
+		width: 50%;
+		display: inline-block;
+		font-size: 1em;
+	}
+	/*por cada article*/
+	.portafolio .job{
+		margin: 1em;
+	}
+}
+@media only screen and (min-width: 760px){
+	.contenedor{
+		max-width: 820px;
+		margin: 0 auto;
+	}
+
+	.portafolio .job-container > li{
+		width: 33%;
+	}
+	#menu-social ul li {
+		display: inline-block;
+		width: 33%;
+	}
+	.formulario button{
+		width: 20%;
+		float: right;
+		margin: 0.5em 0;
+	}
 }
