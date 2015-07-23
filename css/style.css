@@ -134,6 +134,7 @@ h2{
 
 .portafolio-job .job-container > li{
 	list-style: none;
+	margin-bottom: 1em;
 }
 
 .portafolio-job .job figure{
@@ -218,6 +219,7 @@ h2{
 
 #menu-social ul li{
 	text-align: center;
+	font-size: 1rem;
 }
 
 #menu-social ul li a{
@@ -273,6 +275,49 @@ footer p{
 }
 /* media query */
 @media only screen and (min-width: 40.625em){
+	#menu-social ul li {
+		display: inline-block;
+		width: 33.33%;
+	}
+	/*resetear los estilos*/
+	.portafolio-job .job-container{
+		font-size: 0;
+		display: block;
+	}
+	/* desplegar vista*/
+	.portafolio-job .job-container > li{
+		width: 50%;
+		display: inline-block;
+		font-size: 1rem;
+	}
+	/*por cada article*/
+	.portafolio-job .job{
+		margin: 1em;
+	}
+}
+
+@media only screen and (min-width: 47.5em){
+	.contenedor{
+		max-width: 60em;
+		margin: 0 auto;
+	}
+
+	.portafolio-job .job-container ul{
+		font-size: 0;
+	}
+	.portafolio-job .job-container > li{
+		width: 33.33%;
+		font-size: 1rem;
+	}
+
+	.formulario button{
+		width: 20%;
+		float: right;
+		margin: 0.5em 0;
+	}
+}
+
+@media only screen and (min-width: 56em){
 	header #menu-superior > a{
 		display: none;
 	}
@@ -298,42 +343,9 @@ footer p{
 		padding: 1em;
 
 	}
+
 	header #menu-superior ul li a:hover{
 		background-color: #2EC0C1;
 		color: white;
-	}
-	/*resetear los estilos*/
-	.portafolio-job .job-container{
-		font-size: 0;
-	}
-	/* desplegar vista*/
-	.portafolio-job .job-container > li{
-		width: 50%;
-		display: inline-block;
-		font-size: 1rem;
-	}
-	/*por cada article*/
-	.portafolio-job .job{
-		margin: 1em;
-	}
-}
-@media only screen and (min-width: 47.5em){
-	.contenedor{
-		max-width: 40em;
-		margin: 0 auto;
-	}
-
-	.portafolio-job .job-container > li{
-		width: 33.33%;
-	}
-	#menu-social ul li {
-		display: inline-block;
-		width: 33.33%;
-		font-size: 1rem;
-	}
-	.formulario button{
-		width: 20%;
-		float: right;
-		margin: 0.5em 0;
 	}
 }
