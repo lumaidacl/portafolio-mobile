@@ -47,6 +47,7 @@ body{
 	background-color: #F0F0F0;
 	font-weight: 100;
 }
+
 header{
 	background-color: white;
 }
@@ -63,6 +64,7 @@ header h1{
 	margin: 0;
 	padding: 0.3em;
 	float: left;
+	line-height: 2em;
 }
 
 header h1 a{
@@ -72,7 +74,8 @@ header h1 a{
 
 header #menu-superior{
 	float: right;
-	padding: 1em;
+	font-size: 1rem;
+	line-height: 2.5em;
 }
 
 header #menu-superior a{
@@ -85,30 +88,7 @@ header #menu-superior ul{
 	display:none;
 }
 
-/*header #menu-superior ul li{
-	display: inline-block;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-
-header #menu-superior ul li a{
-	text-decoration: none;
-	display: block;
-	color: black;
-	padding: 1em;
-
-}
-header #menu-superior ul li a:hover{
-	background-color: #2EC0C1;
-	color: white;
-}*/
-
 /*enviroment page*/
-.contenedor{
-	margin: 0 auto;
-}
 
 h2{
 	text-transform: uppercase;
@@ -229,6 +209,10 @@ h2{
 	text-decoration: none;
 }
 
+#menu-social ul li span{
+	font-size: 1.7em;
+}
+
 #menu-social .r-twitter > a{
 	background-color: #00E4FF;
 }
@@ -262,6 +246,7 @@ h2{
 	text-align: center;
 	color: white;
 	text-transform: uppercase;
+	border-radius: 0.3em;
 }
 /*firma*/
 footer{
@@ -341,7 +326,6 @@ footer p{
 		display: block;
 		color: black;
 		padding: 1em;
-
 	}
 
 	header #menu-superior ul li a:hover{
